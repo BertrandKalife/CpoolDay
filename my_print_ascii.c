@@ -7,7 +7,3 @@ void my_print_ascii(void){
         print_char(i);
     }
 }
-
-int main(){
-    my_print_ascii();
-}
