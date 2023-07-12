@@ -1,19 +1,18 @@
-
 #include <stdio.h>
 
 void print_number();
 
-int my_get_char_repeat(char to_find, char* str){
+int my_get_char_repeat(char to_find, char* to_search){
    
-    if(str == NULL){
+    if(to_search == NULL){
         print_number(0);
     }
     else{
         int i=0;
-        for(int x=0; str[x]; x++){
+        for(int x=0; to_search[x]; x++){
 
-                if (str[x]== to_find)i++;
+                if (to_search[x]== to_find)i++;
             }
-       print_number(i);
+        return i; 
     }
 }
