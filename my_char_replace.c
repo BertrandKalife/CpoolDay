@@ -1,16 +1,15 @@
 
+#include<stdio.h>
 void print_char();
 
-void my_char_replace (char*str, char toFinde, char toReplace){
+char* my_char_replace (char* origin, char toFinde, char toReplace){
 
     int x=0;
-    for(x; str[x]!='\0'; x++){
+    for(x; origin[x]!='\0'; x++){
         
-        if(str[x]!= toFinde){
-            print_char(str[x]);
-        }
-        else{
-            print_char(toReplace);
+        if(origin[x]==toFinde){
+            origin[x]= toReplace;
         }
     }
+    return origin;
 }
