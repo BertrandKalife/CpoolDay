@@ -1,5 +1,4 @@
 
-//0 - 127
 void print_char();
 
 void my_print_ascii(void){
